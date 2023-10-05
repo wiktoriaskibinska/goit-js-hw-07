@@ -11,6 +11,7 @@ function addGalleryItems(items) {
       src="${item.preview}"
       data-source="${item.original}"
       alt="${item.description}"
+      draggable="false"
     />
   </a>
 </div>
@@ -20,6 +21,29 @@ gallery.innerHTML = addGalleryItems(galleryItems);
 
 // implementig of lightbox:
 
+gallery.addEventListener("click", onImageClick)
+
+function onImageClick(evt) {
+
+  prevDefault(evt);
+
+  if (!evt.target.classList.contains("gallery__image")) {
+    return;
+  }
 
 
+  const instance = basicLightbox.create(`
+    <img src="${evt.target.dataset.source}" width="800" height="600">
+`)
+
+    instance.show()
+  
+}
+
+//zamykanie lightbox
+
+//prevent 
+function prevDefault(evt) {
+  evt.preventDefault;
+}
 console.log(galleryItems);
