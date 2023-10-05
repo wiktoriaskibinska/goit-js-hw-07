@@ -29,17 +29,17 @@ export const galleryItems = [
   },
   {
     preview:
+      'dog.jpg',
+    original:
+      'https://cdn.pixabay.com/photo/2014/12/21/12/13/dog-574873_1280.jpg',
+    description: 'Beagle Dog',
+  },
+  {
+    preview:
       'https://cdn.pixabay.com/photo/2018/09/13/10/36/mountains-3674334__340.jpg',
     original:
       'https://cdn.pixabay.com/photo/2018/09/13/10/36/mountains-3674334_1280.jpg',
     description: 'Alpine Mountains',
-  },
-  {
-    preview:
-      'https://cdn.pixabay.com/photo/2019/05/16/23/04/landscape-4208571__340.jpg',
-    original:
-      'https://cdn.pixabay.com/photo/2019/05/16/23/04/landscape-4208571_1280.jpg',
-    description: 'Mountain Lake Sailing',
   },
   {
     preview:
