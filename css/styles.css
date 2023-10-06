@@ -42,3 +42,11 @@
 .gallery__link:hover {
   cursor: zoom-in;
 }
+/*Simple lightbox styles*/
+.sl-wrapper .sl-image .sl-caption{
+  background-color: rgba(210,180,140); 
+}
+.sl-overlay {
+  background-color:rgba(210,180,140, 0.8)  ;
+}
+
